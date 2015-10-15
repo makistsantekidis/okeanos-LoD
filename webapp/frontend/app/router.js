@@ -13,8 +13,6 @@ Router.map(function() {
 		this.route('login');
   		// /user/logout
   		this.route('logout');
-    // /user/clusters
-    this.route('clusters');
 	});
 
   //apps routes
