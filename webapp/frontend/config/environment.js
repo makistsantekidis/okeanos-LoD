@@ -21,7 +21,7 @@ module.exports = function(environment) {
 
   ENV['ember-simple-auth'] = {
       authorizer: 'authorizer:django',
-      routeAfterAuthentication: '/user/clusters',
+      routeAfterAuthentication: '/',
     crossOriginWhitelist: ['*']
   };
 
