@@ -5,15 +5,11 @@ var Router = Ember.Router.extend({
   location: ENV.locationType,
 });
 
-Router.map(function() {
-
-  //user routes
-  this.resource('user', function() {
-		// /user/login
-		this.route('login');
-  		// /user/logout
-  		this.route('logout');
-	});
+Router.map(function () {
+  this.route('dashboard');
+  this.route('lambda-instance');
+  this.route('lambda-instance', {path: '/lambda-instances/:instance_uuid'});
+  this.route('create-lambda-instance');
 
   //apps routes
   this.resource('apps', function() {
